@@ -5,3 +5,9 @@ export const getAll = async () => {
 
   return data
 }
+
+export const create = async (name) => {
+  const { data } = await api.post('brand', { name })
+  
+  return data
+}
