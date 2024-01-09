@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="content">
-      <div class="card">
+      <div class="card" id="brands">
         <div class="title">
           Brands
         </div>
@@ -9,11 +9,12 @@
           class="list" 
           v-for="brand in brands" 
           :key="brand._id"
+          :id="'brand-'+ brand.name"
           >
           {{ brand.name }}
         </div>
       </div>
-      <div class="card">
+      <div class="card" id="cars">
         <div class="title">
           Cars
         </div>
@@ -21,7 +22,8 @@
           class="list" 
           v-for="car in cars" 
           :key="car._id"
-          >
+          :id="'car-'+ car.model"
+        >
           {{ car.model }}
         </div>
       </div>
