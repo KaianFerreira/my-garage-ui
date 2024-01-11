@@ -1,0 +1,27 @@
+@import "./variables";
+@import "../fonts/main.scss";
+
+* {
+	padding: 0;
+	margin: 0;
+	font: $font-normal-regular;
+}
+
+body, #app {
+	height: 100vh;
+	background-color: $background-layer-0;
+	color: #ffffff;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	height: fit-content;
+	gap: 16px;
+	padding: 16px;
+	background-color: #c1c1c1;
+	color: black;
+	.title {
+		font-size: 2rem;
+	}
+}
