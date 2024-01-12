@@ -1,6 +1,8 @@
 <template>
   <HeaderComponent />
-  <RouterView />
+  <div class="body">
+    <RouterView />
+  </div>
 </template>
 
 <script>
@@ -13,3 +15,16 @@
     }
   }
 </script>
+
+<style lang="scss">
+.body {
+  display: flex;
+  width: 100%;
+  height: calc(100% - $header-size);
+  justify-content: center;
+  .content {
+    width: $grid-large;
+    max-width: $grid-large;
+  }
+}
+</style>
